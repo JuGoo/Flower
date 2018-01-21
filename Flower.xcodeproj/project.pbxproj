@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F90062F0200E64AB00578C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90062EF200E64AB00578C11 /* AppDelegate.swift */; };
-		F90062F2200E64AB00578C11 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90062F1200E64AB00578C11 /* FirstViewController.swift */; };
-		F90062F4200E64AB00578C11 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90062F3200E64AB00578C11 /* SecondViewController.swift */; };
-		F90062F7200E64AB00578C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90062F5200E64AB00578C11 /* Main.storyboard */; };
-		F90062F9200E64AB00578C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90062F8200E64AB00578C11 /* Assets.xcassets */; };
-		F90062FC200E64AB00578C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90062FA200E64AB00578C11 /* LaunchScreen.storyboard */; };
-		F9006307200E64AB00578C11 /* AccorBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9006306200E64AB00578C11 /* AccorBookingTests.swift */; };
-		F9006312200E64AB00578C11 /* AccorBookingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9006311200E64AB00578C11 /* AccorBookingUITests.swift */; };
-		F9006321200E654D00578C11 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9006320200E654D00578C11 /* AppCoordinator.swift */; };
-		F9006323200E66B000578C11 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9006322200E66B000578C11 /* AuthenticationCoordinator.swift */; };
+		F944A742201546CC00D4C771 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A731201546CC00D4C771 /* AuthenticationCoordinator.swift */; };
+		F944A743201546CC00D4C771 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A732201546CC00D4C771 /* AppCoordinator.swift */; };
+		F944A744201546CC00D4C771 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A733201546CC00D4C771 /* FirstViewController.swift */; };
+		F944A745201546CC00D4C771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F944A734201546CC00D4C771 /* Assets.xcassets */; };
+		F944A746201546CC00D4C771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F944A735201546CC00D4C771 /* LaunchScreen.storyboard */; };
+		F944A747201546CC00D4C771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F944A737201546CC00D4C771 /* Main.storyboard */; };
+		F944A748201546CC00D4C771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A739201546CC00D4C771 /* AppDelegate.swift */; };
+		F944A749201546CC00D4C771 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A73A201546CC00D4C771 /* SecondViewController.swift */; };
+		F944A74A201546CC00D4C771 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F944A73B201546CC00D4C771 /* Info.plist */; };
+		F944A74F201546E400D4C771 /* FlowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A73D201546CC00D4C771 /* FlowerTests.swift */; };
+		F944A750201546E900D4C771 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F944A73E201546CC00D4C771 /* Info.plist */; };
+		F944A751201546EF00D4C771 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F944A740201546CC00D4C771 /* Info.plist */; };
+		F944A752201546EF00D4C771 /* FlowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A741201546CC00D4C771 /* FlowerUITests.swift */; };
+		F944A7552015482F00D4C771 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A7542015482F00D4C771 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,21 +42,22 @@
 
 /* Begin PBXFileReference section */
 		F90062EC200E64AB00578C11 /* Flower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flower.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F90062EF200E64AB00578C11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F90062F1200E64AB00578C11 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F90062F3200E64AB00578C11 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		F90062F6200E64AB00578C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F90062F8200E64AB00578C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F90062FB200E64AB00578C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F90062FD200E64AB00578C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9006302200E64AB00578C11 /* FlowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9006306200E64AB00578C11 /* AccorBookingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccorBookingTests.swift; sourceTree = "<group>"; };
-		F9006308200E64AB00578C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F900630D200E64AB00578C11 /* FlowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9006311200E64AB00578C11 /* AccorBookingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccorBookingUITests.swift; sourceTree = "<group>"; };
-		F9006313200E64AB00578C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9006320200E654D00578C11 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		F9006322200E66B000578C11 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		F944A731201546CC00D4C771 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		F944A732201546CC00D4C771 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F944A733201546CC00D4C771 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F944A734201546CC00D4C771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F944A736201546CC00D4C771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F944A738201546CC00D4C771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F944A739201546CC00D4C771 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F944A73A201546CC00D4C771 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F944A73B201546CC00D4C771 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F944A73D201546CC00D4C771 /* FlowerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowerTests.swift; sourceTree = "<group>"; };
+		F944A73E201546CC00D4C771 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F944A740201546CC00D4C771 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F944A741201546CC00D4C771 /* FlowerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowerUITests.swift; sourceTree = "<group>"; };
+		F944A7542015482F00D4C771 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +88,9 @@
 		F90062E3200E64AB00578C11 = {
 			isa = PBXGroup;
 			children = (
-				F90062EE200E64AB00578C11 /* Flower */,
-				F9006305200E64AB00578C11 /* AccorBookingTests */,
-				F9006310200E64AB00578C11 /* AccorBookingUITests */,
+				F944A72F201546CC00D4C771 /* Flower */,
+				F944A73C201546CC00D4C771 /* FlowerTests */,
+				F944A73F201546CC00D4C771 /* FlowerUITests */,
 				F90062ED200E64AB00578C11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,47 +105,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F90062EE200E64AB00578C11 /* Flower */ = {
+		F944A72F201546CC00D4C771 /* Flower */ = {
 			isa = PBXGroup;
 			children = (
-				F90062EF200E64AB00578C11 /* AppDelegate.swift */,
-				F90062F1200E64AB00578C11 /* FirstViewController.swift */,
-				F90062F3200E64AB00578C11 /* SecondViewController.swift */,
-				F900631F200E652F00578C11 /* Coordinators */,
-				F90062F5200E64AB00578C11 /* Main.storyboard */,
-				F90062F8200E64AB00578C11 /* Assets.xcassets */,
-				F90062FA200E64AB00578C11 /* LaunchScreen.storyboard */,
-				F90062FD200E64AB00578C11 /* Info.plist */,
+				F944A7532015480B00D4C771 /* Authentification */,
+				F944A730201546CC00D4C771 /* Coordinators */,
+				F944A733201546CC00D4C771 /* FirstViewController.swift */,
+				F944A734201546CC00D4C771 /* Assets.xcassets */,
+				F944A735201546CC00D4C771 /* LaunchScreen.storyboard */,
+				F944A737201546CC00D4C771 /* Main.storyboard */,
+				F944A739201546CC00D4C771 /* AppDelegate.swift */,
+				F944A73A201546CC00D4C771 /* SecondViewController.swift */,
+				F944A73B201546CC00D4C771 /* Info.plist */,
 			);
-			name = Flower;
-			path = AccorBooking;
+			path = Flower;
 			sourceTree = "<group>";
 		};
-		F9006305200E64AB00578C11 /* AccorBookingTests */ = {
+		F944A730201546CC00D4C771 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				F9006306200E64AB00578C11 /* AccorBookingTests.swift */,
-				F9006308200E64AB00578C11 /* Info.plist */,
-			);
-			path = AccorBookingTests;
-			sourceTree = "<group>";
-		};
-		F9006310200E64AB00578C11 /* AccorBookingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F9006311200E64AB00578C11 /* AccorBookingUITests.swift */,
-				F9006313200E64AB00578C11 /* Info.plist */,
-			);
-			path = AccorBookingUITests;
-			sourceTree = "<group>";
-		};
-		F900631F200E652F00578C11 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				F9006320200E654D00578C11 /* AppCoordinator.swift */,
-				F9006322200E66B000578C11 /* AuthenticationCoordinator.swift */,
+				F944A731201546CC00D4C771 /* AuthenticationCoordinator.swift */,
+				F944A732201546CC00D4C771 /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F944A73C201546CC00D4C771 /* FlowerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F944A73D201546CC00D4C771 /* FlowerTests.swift */,
+				F944A73E201546CC00D4C771 /* Info.plist */,
+			);
+			path = FlowerTests;
+			sourceTree = "<group>";
+		};
+		F944A73F201546CC00D4C771 /* FlowerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F944A740201546CC00D4C771 /* Info.plist */,
+				F944A741201546CC00D4C771 /* FlowerUITests.swift */,
+			);
+			path = FlowerUITests;
+			sourceTree = "<group>";
+		};
+		F944A7532015480B00D4C771 /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				F944A7542015482F00D4C771 /* LoginViewController.swift */,
+			);
+			path = Authentification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F90062FC200E64AB00578C11 /* LaunchScreen.storyboard in Resources */,
-				F90062F9200E64AB00578C11 /* Assets.xcassets in Resources */,
-				F90062F7200E64AB00578C11 /* Main.storyboard in Resources */,
+				F944A74A201546CC00D4C771 /* Info.plist in Resources */,
+				F944A747201546CC00D4C771 /* Main.storyboard in Resources */,
+				F944A745201546CC00D4C771 /* Assets.xcassets in Resources */,
+				F944A746201546CC00D4C771 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F944A750201546E900D4C771 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F944A751201546EF00D4C771 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,11 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9006321200E654D00578C11 /* AppCoordinator.swift in Sources */,
-				F9006323200E66B000578C11 /* AuthenticationCoordinator.swift in Sources */,
-				F90062F4200E64AB00578C11 /* SecondViewController.swift in Sources */,
-				F90062F0200E64AB00578C11 /* AppDelegate.swift in Sources */,
-				F90062F2200E64AB00578C11 /* FirstViewController.swift in Sources */,
+				F944A7552015482F00D4C771 /* LoginViewController.swift in Sources */,
+				F944A748201546CC00D4C771 /* AppDelegate.swift in Sources */,
+				F944A744201546CC00D4C771 /* FirstViewController.swift in Sources */,
+				F944A743201546CC00D4C771 /* AppCoordinator.swift in Sources */,
+				F944A749201546CC00D4C771 /* SecondViewController.swift in Sources */,
+				F944A742201546CC00D4C771 /* AuthenticationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9006307200E64AB00578C11 /* AccorBookingTests.swift in Sources */,
+				F944A74F201546E400D4C771 /* FlowerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9006312200E64AB00578C11 /* AccorBookingUITests.swift in Sources */,
+				F944A752201546EF00D4C771 /* FlowerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,20 +334,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F90062F5200E64AB00578C11 /* Main.storyboard */ = {
+		F944A735201546CC00D4C771 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F90062F6200E64AB00578C11 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F90062FA200E64AB00578C11 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F90062FB200E64AB00578C11 /* Base */,
+				F944A736201546CC00D4C771 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F944A737201546CC00D4C771 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F944A738201546CC00D4C771 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

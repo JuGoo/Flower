@@ -16,12 +16,12 @@ final class AuthenticationCoordinator: Coordinator {
     
     weak var delegate: AuthenticationCoordinatorDelegate?
     let navigationController: UINavigationController
-    let loginViewController: UIViewController
+    let loginViewController: LoginViewController
     
     init(navigationController:UINavigationController) {
         self.navigationController = navigationController
-//        let viewModel = LoginViewModel()
-//        self.loginViewController = LoginViewController(viewModel:viewModel)
+        let viewModel = LoginViewModel()
+        self.loginViewController = LoginViewController(viewModel: viewModel)
     }
     
     deinit {
@@ -33,7 +33,7 @@ final class AuthenticationCoordinator: Coordinator {
     }
     
     func showLoginViewController() {
-//        loginViewController.delegate = self
+        loginViewController.delegate = self
         navigationController.show(loginViewController, sender: self)
     }
     
@@ -64,14 +64,15 @@ extension AuthenticationCoordinator: LoginViewControllerDelegate {
     }
 }
 
-extension AuthenticationCoordinator: SignupViewControllerDelegate {
-    func didCompleteSignup() {
-        showPasswordViewController()
-    }
-}
+//extension AuthenticationCoordinator: SignupViewControllerDelegate {
+//    func didCompleteSignup() {
+//        showPasswordViewController()
+//    }
+//}
+//
+//extension AuthenticationCoordinator: PasswordViewControllerDelegate {
+//    func didSignupWithEmailAndPassword(email: String, passowrd: String) {
+//        delegate?.coordinatorDidAuthenticate(coordinator: self)
+//    }
+//}
 
-extension AuthenticationCoordinator: PasswordViewControllerDelegate {
-    func didSignupWithEmailAndPassword(email: String, passowrd: String) {
-        delegate?.coordinatorDidAuthenticate(coordinator: self)
-    }
-}
