@@ -15,10 +15,7 @@
 		F944A747201546CC00D4C771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F944A737201546CC00D4C771 /* Main.storyboard */; };
 		F944A748201546CC00D4C771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A739201546CC00D4C771 /* AppDelegate.swift */; };
 		F944A749201546CC00D4C771 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A73A201546CC00D4C771 /* SecondViewController.swift */; };
-		F944A74A201546CC00D4C771 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F944A73B201546CC00D4C771 /* Info.plist */; };
 		F944A74F201546E400D4C771 /* FlowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A73D201546CC00D4C771 /* FlowerTests.swift */; };
-		F944A750201546E900D4C771 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F944A73E201546CC00D4C771 /* Info.plist */; };
-		F944A751201546EF00D4C771 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F944A740201546CC00D4C771 /* Info.plist */; };
 		F944A752201546EF00D4C771 /* FlowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A741201546CC00D4C771 /* FlowerUITests.swift */; };
 		F944A7552015482F00D4C771 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A7542015482F00D4C771 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -263,7 +260,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F944A74A201546CC00D4C771 /* Info.plist in Resources */,
 				F944A747201546CC00D4C771 /* Main.storyboard in Resources */,
 				F944A745201546CC00D4C771 /* Assets.xcassets in Resources */,
 				F944A746201546CC00D4C771 /* LaunchScreen.storyboard in Resources */,
@@ -274,7 +270,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F944A750201546E900D4C771 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +277,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F944A751201546EF00D4C771 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
