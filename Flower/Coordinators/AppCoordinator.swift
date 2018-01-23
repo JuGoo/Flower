@@ -8,16 +8,43 @@
 
 import UIKit
 
-class Coordinator { }
+protocol Coordinator: class {
+    var childCoordinators: [Coordinator] { get set }
+    func start()
+}
 
-final class AppCoordinator {
+extension Coordinator {
+    public func addChildCoordinator(_ childCoordinator: Coordinator) {
+        self.childCoordinators.append(childCoordinator)
+    }
     
-    fileprivate var isLoggedIn = false
-    fileprivate let navigationController:UINavigationController
-    fileprivate var childCoordinators = [Coordinator]()
+    public func removeChildCoordinator(_ childCoordinator: Coordinator) {
+        self.childCoordinators = self.childCoordinators.filter { $0 !== childCoordinator }
+    }
+}
+
+protocol NavigationCoordinator: Coordinator {
+    var navigationController: UINavigationController { get set }
+    init(navigationController: UINavigationController)
+}
+
+protocol TabBarCoordinator: Coordinator {
+    var tabBarController: UITabBarController? { get set }
+    init(tabBarController: UITabBarController?)
+}
+
+class AppCoordinator: NSObject, TabBarCoordinator {
     
-    init(with navigationController:UINavigationController) {
-        self.navigationController = navigationController
+    var isLoggedIn = false
+    
+    var tabBarController: UITabBarController?
+    var childCoordinators = [Coordinator]()
+    
+    let orderTabNavigationController = UINavigationController()
+    let profileTabNavigationController = UINavigationController()
+    
+    required init(tabBarController: UITabBarController?) {
+        self.tabBarController = tabBarController
     }
     
     deinit {
@@ -25,55 +52,106 @@ final class AppCoordinator {
     }
     
     func start() {
-        if isLoggedIn {
-            showProfile()
-        } else {
-            showAuthentication()
-        }
+        tabBarController?.delegate = self
+        initTabBarController()
     }
     
-    fileprivate func showProfile() {
-//        let profileFlowCoordinator = ProfileFlowCoordinator(navigationController: navigationController)
-//        profileFlowCoordinator.delegate = self
-//        profileFlowCoordinator.start()
-//        childCoordinators.append(profileFlowCoordinator)
+    fileprivate func initAndStartMainCoordinator(navigationController: UINavigationController) {
+        let mainCoordinator = MainCoordinator(navigationController: navigationController)
+        mainCoordinator.delegate = self
+        mainCoordinator.start()
+        self.addChildCoordinator(mainCoordinator)
     }
     
-    fileprivate func showAuthentication() {
-//        let authenticationCoordinator = AuthenticationCoordinator(navigationController: navigationController)
-//        authenticationCoordinator.delegate = self
-//        authenticationCoordinator.start()
-//        childCoordinators.append(authenticationCoordinator)
+    fileprivate func initAndStartAuthenticationCoordinator(navigationController: UINavigationController) {
+        let authenticationCoordinator = AuthenticationCoordinator(navigationController: navigationController)
+        authenticationCoordinator.delegate = self
+        authenticationCoordinator.start()
+        self.addChildCoordinator(authenticationCoordinator)
     }
     
+    fileprivate func initAndStartProfileCoordinator(navigationController: UINavigationController) {
+        let profileCoordinator = ProfileCoordinator(navigationController: navigationController)
+        profileCoordinator.delegate = self
+        profileCoordinator.start()
+        self.addChildCoordinator(profileCoordinator)
+    }
+    
+    fileprivate func initTabBarController() {
+        
+        let orderTabBarItem = UITabBarItem(title: "Order", image: UIImage(named: "first"), tag: 0)
+        orderTabNavigationController.tabBarItem = orderTabBarItem
+        
+        let profileTabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "second"), tag: 1)
+        profileTabNavigationController.tabBarItem = profileTabBarItem
+        
+        initAndStartMainCoordinator(navigationController: orderTabNavigationController)
+        
+        tabBarController?.viewControllers = [orderTabNavigationController, profileTabNavigationController]
+    }
 }
 
-//extension AppCoordinator : AuthenticationCoordinatorDelegate {
-//    
-//    func coordinatorDidAuthenticate(coordinator:AuthenticationCoordinator) {
-//        removeCoordinator(coordinator: coordinator)
-//        showProfile()
-//    }
-//    
-//    //we need a better way to find coordinators
-//    fileprivate func removeCoordinator(coordinator:Coordinator) {
-//        
-//        var idx:Int?
-//        for (index,value) in childCoordinators.enumerated() {
-//            if value === coordinator {
-//                idx = index
-//                break
-//            }
-//        }
-//        
-//        if let index = idx {
-//            childCoordinators.remove(at: index)
-//        }
-//        
-//    }
-//}
-//
-//extension AppCoordinator : ProfileFlowCoordinatorDelegate {
-//    //TODO:
-//}
+extension AppCoordinator: UITabBarControllerDelegate {
+    fileprivate func showLoginViewController() {
+        initAndStartAuthenticationCoordinator(navigationController: profileTabNavigationController)
+    }
+    
+    fileprivate func showProfileViewController() {
+        initAndStartProfileCoordinator(navigationController: profileTabNavigationController)
+    }
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if let controllers = tabBarController.viewControllers {
+            switch viewController {
+                //orders
+            case controllers[0]:
+                break
+                //profile - login
+            case controllers[1]:
+                // user is not logged in and Profile tab is selected
+                if !isLoggedIn {
+                    showLoginViewController()
+                } else {
+                    showProfileViewController()
+                }
+                break
+            default:
+                break
+            }
+        }
+        return true
+    }
+}
+
+extension AppCoordinator: MainCoordinatorDelegate {
+    func mainCoordinatorDelegateDidLogout(_ mainCoordinator: MainCoordinator) {
+        
+        //        UserManager.shared.clearToken()
+        let storage = HTTPCookieStorage.shared
+        for cookie in storage.cookies! {
+            storage.deleteCookie(cookie)
+        }
+        
+        profileTabNavigationController.viewControllers = []
+        self.removeChildCoordinator(mainCoordinator)
+        
+        tabBarController?.selectedIndex = 0
+    }
+}
+
+extension AppCoordinator: AuthenticationCoordinatorDelegate {
+    
+    func coordinatorDidAuthenticate(coordinator: AuthenticationCoordinator) {
+        self.isLoggedIn = true
+        showProfileViewController()
+    }
+}
+
+extension AppCoordinator: ProfileCoordinatorDelegate {
+    
+    func coordinatorLogout(coordinator: ProfileCoordinator) {
+        self.isLoggedIn = false
+        showLoginViewController()
+    }
+}
 

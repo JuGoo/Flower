@@ -9,15 +9,24 @@
 /* Begin PBXBuildFile section */
 		F944A742201546CC00D4C771 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A731201546CC00D4C771 /* AuthenticationCoordinator.swift */; };
 		F944A743201546CC00D4C771 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A732201546CC00D4C771 /* AppCoordinator.swift */; };
-		F944A744201546CC00D4C771 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A733201546CC00D4C771 /* FirstViewController.swift */; };
 		F944A745201546CC00D4C771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F944A734201546CC00D4C771 /* Assets.xcassets */; };
 		F944A746201546CC00D4C771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F944A735201546CC00D4C771 /* LaunchScreen.storyboard */; };
 		F944A747201546CC00D4C771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F944A737201546CC00D4C771 /* Main.storyboard */; };
 		F944A748201546CC00D4C771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A739201546CC00D4C771 /* AppDelegate.swift */; };
-		F944A749201546CC00D4C771 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A73A201546CC00D4C771 /* SecondViewController.swift */; };
 		F944A74F201546E400D4C771 /* FlowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A73D201546CC00D4C771 /* FlowerTests.swift */; };
 		F944A752201546EF00D4C771 /* FlowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A741201546CC00D4C771 /* FlowerUITests.swift */; };
 		F944A7552015482F00D4C771 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A7542015482F00D4C771 /* LoginViewController.swift */; };
+		F97A0D032017410700BA1664 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97A0D022017410700BA1664 /* LoginViewController.xib */; };
+		F9C368F52017A40600729638 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C368F42017A40600729638 /* MainViewController.swift */; };
+		F9C368F92017A63800729638 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9C368F82017A63800729638 /* MainViewController.xib */; };
+		F9C368FE2017AF3500729638 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C368FC2017AF3500729638 /* ProfileViewController.swift */; };
+		F9C368FF2017AF3500729638 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9C368FD2017AF3500729638 /* ProfileViewController.xib */; };
+		F9CDF6E120174C11009B506D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6DF20174C11009B506D /* SignupViewController.swift */; };
+		F9CDF6E220174C11009B506D /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CDF6E020174C11009B506D /* SignupViewController.xib */; };
+		F9CDF6E420178BB0009B506D /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6E320178BB0009B506D /* TabBarCoordinator.swift */; };
+		F9CDF6E620178C15009B506D /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6E520178C15009B506D /* OrderCoordinator.swift */; };
+		F9CDF6E820178C66009B506D /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6E720178C66009B506D /* ProfileCoordinator.swift */; };
+		F9CDF6EA20179D8F009B506D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6E920179D8F009B506D /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,18 +52,27 @@
 		F900630D200E64AB00578C11 /* FlowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F944A731201546CC00D4C771 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
 		F944A732201546CC00D4C771 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		F944A733201546CC00D4C771 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F944A734201546CC00D4C771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F944A736201546CC00D4C771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F944A738201546CC00D4C771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F944A739201546CC00D4C771 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F944A73A201546CC00D4C771 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F944A73B201546CC00D4C771 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F944A73D201546CC00D4C771 /* FlowerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowerTests.swift; sourceTree = "<group>"; };
 		F944A73E201546CC00D4C771 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F944A740201546CC00D4C771 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F944A741201546CC00D4C771 /* FlowerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowerUITests.swift; sourceTree = "<group>"; };
 		F944A7542015482F00D4C771 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F97A0D022017410700BA1664 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F9C368F42017A40600729638 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F9C368F82017A63800729638 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		F9C368FC2017AF3500729638 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F9C368FD2017AF3500729638 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		F9CDF6DF20174C11009B506D /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		F9CDF6E020174C11009B506D /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		F9CDF6E320178BB0009B506D /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		F9CDF6E520178C15009B506D /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
+		F9CDF6E720178C66009B506D /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		F9CDF6E920179D8F009B506D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +123,13 @@
 		F944A72F201546CC00D4C771 /* Flower */ = {
 			isa = PBXGroup;
 			children = (
+				F9C368F32017A3F400729638 /* controllers */,
 				F944A7532015480B00D4C771 /* Authentification */,
 				F944A730201546CC00D4C771 /* Coordinators */,
-				F944A733201546CC00D4C771 /* FirstViewController.swift */,
 				F944A734201546CC00D4C771 /* Assets.xcassets */,
 				F944A735201546CC00D4C771 /* LaunchScreen.storyboard */,
 				F944A737201546CC00D4C771 /* Main.storyboard */,
 				F944A739201546CC00D4C771 /* AppDelegate.swift */,
-				F944A73A201546CC00D4C771 /* SecondViewController.swift */,
 				F944A73B201546CC00D4C771 /* Info.plist */,
 			);
 			path = Flower;
@@ -121,8 +138,12 @@
 		F944A730201546CC00D4C771 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				F944A731201546CC00D4C771 /* AuthenticationCoordinator.swift */,
 				F944A732201546CC00D4C771 /* AppCoordinator.swift */,
+				F9CDF6E920179D8F009B506D /* MainCoordinator.swift */,
+				F944A731201546CC00D4C771 /* AuthenticationCoordinator.swift */,
+				F9CDF6E320178BB0009B506D /* TabBarCoordinator.swift */,
+				F9CDF6E520178C15009B506D /* OrderCoordinator.swift */,
+				F9CDF6E720178C66009B506D /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -149,8 +170,22 @@
 			isa = PBXGroup;
 			children = (
 				F944A7542015482F00D4C771 /* LoginViewController.swift */,
+				F97A0D022017410700BA1664 /* LoginViewController.xib */,
+				F9CDF6DF20174C11009B506D /* SignupViewController.swift */,
+				F9CDF6E020174C11009B506D /* SignupViewController.xib */,
+				F9C368FC2017AF3500729638 /* ProfileViewController.swift */,
+				F9C368FD2017AF3500729638 /* ProfileViewController.xib */,
 			);
 			path = Authentification;
+			sourceTree = "<group>";
+		};
+		F9C368F32017A3F400729638 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9C368F42017A40600729638 /* MainViewController.swift */,
+				F9C368F82017A63800729638 /* MainViewController.xib */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +295,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9C368FF2017AF3500729638 /* ProfileViewController.xib in Resources */,
+				F97A0D032017410700BA1664 /* LoginViewController.xib in Resources */,
+				F9C368F92017A63800729638 /* MainViewController.xib in Resources */,
+				F9CDF6E220174C11009B506D /* SignupViewController.xib in Resources */,
 				F944A747201546CC00D4C771 /* Main.storyboard in Resources */,
 				F944A745201546CC00D4C771 /* Assets.xcassets in Resources */,
 				F944A746201546CC00D4C771 /* LaunchScreen.storyboard in Resources */,
@@ -288,11 +327,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F944A7552015482F00D4C771 /* LoginViewController.swift in Sources */,
+				F9CDF6E120174C11009B506D /* SignupViewController.swift in Sources */,
+				F9CDF6E420178BB0009B506D /* TabBarCoordinator.swift in Sources */,
 				F944A748201546CC00D4C771 /* AppDelegate.swift in Sources */,
-				F944A744201546CC00D4C771 /* FirstViewController.swift in Sources */,
 				F944A743201546CC00D4C771 /* AppCoordinator.swift in Sources */,
-				F944A749201546CC00D4C771 /* SecondViewController.swift in Sources */,
+				F9CDF6E620178C15009B506D /* OrderCoordinator.swift in Sources */,
+				F9C368FE2017AF3500729638 /* ProfileViewController.swift in Sources */,
+				F9CDF6E820178C66009B506D /* ProfileCoordinator.swift in Sources */,
+				F9CDF6EA20179D8F009B506D /* MainCoordinator.swift in Sources */,
 				F944A742201546CC00D4C771 /* AuthenticationCoordinator.swift in Sources */,
+				F9C368F52017A40600729638 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
