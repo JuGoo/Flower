@@ -10,6 +10,7 @@ import UIKit
 
 protocol AuthenticationCoordinatorDelegate: class {
     func coordinatorDidAuthenticate(coordinator: AuthenticationCoordinator)
+    func coordinatorDidCreateAccount(coordinator: AuthenticationCoordinator)
 }
 
 class AuthenticationCoordinator: NSObject, NavigationCoordinator {
@@ -41,24 +42,28 @@ class AuthenticationCoordinator: NSObject, NavigationCoordinator {
     func showLoginViewController() {
         self.navigationController.setViewControllers([initLoginViewController()], animated: false)
     }
-//    func showLoginViewController() {
-//        loginViewController.delegate = self
-//        navigationController.show(loginViewController, sender: self)
-//    }
-//
-//    func showSignupViewController(){
-//        let viewModel = SignupViewModel()
-//        let signup = SignupViewController(viewModel:viewModel)
-//        signup.delegate = self
-//        navigationController.show(signup, sender: self)
-//    }
-//
-//    func showPasswordViewController(){
-////        let viewModel = PasswordViewModel()
-////        let password = PasswordViewController(viewModel:viewModel)
-////        password.delegate = self
-////        navigationController.show(password, sender: self)
-//    }
+    
+    func showSignupViewController(){
+        let viewModel = SignupViewModel()
+        let signup = SignupViewController(viewModel:viewModel)
+        signup.delegate = self
+        navigationController.show(signup, sender: self)
+    }
+
+    func showPasswordViewController(){
+        let viewModel = PasswordViewModel()
+        let password = PasswordViewController(viewModel:viewModel)
+        password.delegate = self
+        navigationController.show(password, sender: self)
+    }
+    
+    func showSendEmailAlertController() {
+        let alertController = UIAlertController(title: "See your mailbox", message: "An email was sending to xx@yopmail.com", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        self.navigationController.present(alertController, animated: true, completion: nil)
+    }
+    
 }
 
 extension AuthenticationCoordinator: LoginViewControllerDelegate {
@@ -70,19 +75,26 @@ extension AuthenticationCoordinator: LoginViewControllerDelegate {
 
     func didChooseSignup() {
         print(navigationController.childViewControllers)
-//        showSignupViewController()
+        showSignupViewController()
+    }
+    
+    func didSuccessfullySendPassword() {
+        print(navigationController.childViewControllers)
+        showSendEmailAlertController()
     }
 }
-//
-//extension AuthenticationCoordinator: SignupViewControllerDelegate {
-//    func didCompleteSignup() {
-//        showPasswordViewController()
-//    }
-//}
 
-//extension AuthenticationCoordinator: PasswordViewControllerDelegate {
-//    func didSignupWithEmailAndPassword(email: String, passowrd: String) {
-//        delegate?.coordinatorDidAuthenticate(coordinator: self)
-//    }
-//}
+extension AuthenticationCoordinator: SignupViewControllerDelegate {
+    
+    func didCompleteSignup() {
+        showPasswordViewController()
+    }
+}
+
+extension AuthenticationCoordinator: PasswordViewControllerDelegate {
+    
+    func didCompletePassword() {
+        delegate?.coordinatorDidCreateAccount(coordinator: self)
+    }
+}
 

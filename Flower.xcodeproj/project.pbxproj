@@ -16,7 +16,11 @@
 		F944A74F201546E400D4C771 /* FlowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A73D201546CC00D4C771 /* FlowerTests.swift */; };
 		F944A752201546EF00D4C771 /* FlowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A741201546CC00D4C771 /* FlowerUITests.swift */; };
 		F944A7552015482F00D4C771 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A7542015482F00D4C771 /* LoginViewController.swift */; };
+		F96EC8E42018E27E001013E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F96EC8E32018E27E001013E5 /* Localizable.strings */; };
+		F96EC8E92018E47C001013E5 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96EC8E72018E47C001013E5 /* PasswordViewController.swift */; };
+		F96EC8EA2018E47C001013E5 /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96EC8E82018E47C001013E5 /* PasswordViewController.xib */; };
 		F97A0D032017410700BA1664 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97A0D022017410700BA1664 /* LoginViewController.xib */; };
+		F9A2D2D02018F4BE00F0033E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2CF2018F4BE00F0033E /* Order.swift */; };
 		F9C368F52017A40600729638 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C368F42017A40600729638 /* MainViewController.swift */; };
 		F9C368F92017A63800729638 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9C368F82017A63800729638 /* MainViewController.xib */; };
 		F9C368FE2017AF3500729638 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C368FC2017AF3500729638 /* ProfileViewController.swift */; };
@@ -62,7 +66,11 @@
 		F944A740201546CC00D4C771 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F944A741201546CC00D4C771 /* FlowerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowerUITests.swift; sourceTree = "<group>"; };
 		F944A7542015482F00D4C771 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F96EC8E32018E27E001013E5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F96EC8E72018E47C001013E5 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		F96EC8E82018E47C001013E5 /* PasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
 		F97A0D022017410700BA1664 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F9A2D2CF2018F4BE00F0033E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F9C368F42017A40600729638 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F9C368F82017A63800729638 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		F9C368FC2017AF3500729638 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -123,12 +131,14 @@
 		F944A72F201546CC00D4C771 /* Flower */ = {
 			isa = PBXGroup;
 			children = (
+				F9A2D2CE2018F49B00F0033E /* models */,
 				F9C368F32017A3F400729638 /* controllers */,
 				F944A7532015480B00D4C771 /* Authentification */,
 				F944A730201546CC00D4C771 /* Coordinators */,
 				F944A734201546CC00D4C771 /* Assets.xcassets */,
 				F944A735201546CC00D4C771 /* LaunchScreen.storyboard */,
 				F944A737201546CC00D4C771 /* Main.storyboard */,
+				F96EC8E32018E27E001013E5 /* Localizable.strings */,
 				F944A739201546CC00D4C771 /* AppDelegate.swift */,
 				F944A73B201546CC00D4C771 /* Info.plist */,
 			);
@@ -173,10 +183,20 @@
 				F97A0D022017410700BA1664 /* LoginViewController.xib */,
 				F9CDF6DF20174C11009B506D /* SignupViewController.swift */,
 				F9CDF6E020174C11009B506D /* SignupViewController.xib */,
+				F96EC8E72018E47C001013E5 /* PasswordViewController.swift */,
+				F96EC8E82018E47C001013E5 /* PasswordViewController.xib */,
 				F9C368FC2017AF3500729638 /* ProfileViewController.swift */,
 				F9C368FD2017AF3500729638 /* ProfileViewController.xib */,
 			);
 			path = Authentification;
+			sourceTree = "<group>";
+		};
+		F9A2D2CE2018F49B00F0033E /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2D2CF2018F4BE00F0033E /* Order.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		F9C368F32017A3F400729638 /* controllers */ = {
@@ -300,7 +320,9 @@
 				F9C368F92017A63800729638 /* MainViewController.xib in Resources */,
 				F9CDF6E220174C11009B506D /* SignupViewController.xib in Resources */,
 				F944A747201546CC00D4C771 /* Main.storyboard in Resources */,
+				F96EC8E42018E27E001013E5 /* Localizable.strings in Resources */,
 				F944A745201546CC00D4C771 /* Assets.xcassets in Resources */,
+				F96EC8EA2018E47C001013E5 /* PasswordViewController.xib in Resources */,
 				F944A746201546CC00D4C771 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,10 +353,12 @@
 				F9CDF6E420178BB0009B506D /* TabBarCoordinator.swift in Sources */,
 				F944A748201546CC00D4C771 /* AppDelegate.swift in Sources */,
 				F944A743201546CC00D4C771 /* AppCoordinator.swift in Sources */,
+				F96EC8E92018E47C001013E5 /* PasswordViewController.swift in Sources */,
 				F9CDF6E620178C15009B506D /* OrderCoordinator.swift in Sources */,
 				F9C368FE2017AF3500729638 /* ProfileViewController.swift in Sources */,
 				F9CDF6E820178C66009B506D /* ProfileCoordinator.swift in Sources */,
 				F9CDF6EA20179D8F009B506D /* MainCoordinator.swift in Sources */,
+				F9A2D2D02018F4BE00F0033E /* Order.swift in Sources */,
 				F944A742201546CC00D4C771 /* AuthenticationCoordinator.swift in Sources */,
 				F9C368F52017A40600729638 /* MainViewController.swift in Sources */,
 			);
@@ -395,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -439,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -452,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -490,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -503,7 +529,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YB7QC5U2X5;
 				INFOPLIST_FILE = Flower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JG.Flower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,7 +545,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YB7QC5U2X5;
 				INFOPLIST_FILE = Flower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JG.Flower;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Flower
+
+  Created by Julien Gourdet on 24/01/2018.
+  Copyright © 2018 JG. All rights reserved.
+*/
+
+"create.account.title" = "Créer votre compte";
+"create.password.title" = "Saisissez votre mot de passe";

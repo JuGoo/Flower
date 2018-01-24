@@ -11,6 +11,7 @@ import UIKit
 protocol LoginViewControllerDelegate: class {
     func didSuccessfullyLogin()
     func didChooseSignup()
+    func didSuccessfullySendPassword()
 }
 
 protocol LoginViewModelType { }
@@ -39,8 +40,11 @@ final class LoginViewController: UIViewController {
         delegate?.didSuccessfullyLogin()
     }
     
-    
     @IBAction func signupAction(_ sender: Any) {
         delegate?.didChooseSignup()
+    }
+    
+    @IBAction func forgotAction(_ sender: Any) {
+        delegate?.didSuccessfullySendPassword()
     }
 }

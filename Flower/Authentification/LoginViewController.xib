@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -53,11 +52,7 @@
                             <rect key="frame" x="0.0" y="244.66666666666669" width="375" height="244.66666666666669"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcB-ID-Lav">
-                                    <rect key="frame" x="112.33333333333331" y="103" width="150" height="40"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="44L-2G-McU"/>
-                                        <constraint firstAttribute="width" constant="150" id="bN8-ew-oV3"/>
-                                    </constraints>
+                                    <rect key="frame" x="127" y="106.66666666666663" width="121" height="33"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                     <state key="normal" title="Create account">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -77,15 +72,14 @@
                             <rect key="frame" x="0.0" y="489.33333333333343" width="375" height="244.66666666666669"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ld-Qg-Vso">
-                                    <rect key="frame" x="137.66666666666666" y="102.66666666666663" width="100" height="40"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="4a8-sh-RRZ"/>
-                                        <constraint firstAttribute="width" constant="100" id="CHb-uJ-CEY"/>
-                                    </constraints>
+                                    <rect key="frame" x="118.33333333333331" y="106.33333333333326" width="139" height="33"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                    <state key="normal" title="Skip">
+                                    <state key="normal" title="Forgot password ">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="forgotAction:" destination="-1" eventType="touchUpInside" id="VjO-Ov-EWe"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" red="0.78039215689999997" green="0.84705882349999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>

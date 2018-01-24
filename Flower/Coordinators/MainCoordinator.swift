@@ -31,7 +31,7 @@ class MainCoordinator: NSObject, NavigationCoordinator {
     private func initMainViewController() -> MainViewController {
         let mainViewModel = MainViewModel()
         let mainViewController = MainViewController(viewModel: mainViewModel)
-        mainViewModel.delegate = self
+//        mainViewModel.delegate = self
         return mainViewController
     }
     

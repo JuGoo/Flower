@@ -145,6 +145,10 @@ extension AppCoordinator: AuthenticationCoordinatorDelegate {
         self.isLoggedIn = true
         showProfileViewController()
     }
+    
+    func coordinatorDidCreateAccount(coordinator: AuthenticationCoordinator) {
+        showLoginViewController()
+    }
 }
 
 extension AppCoordinator: ProfileCoordinatorDelegate {

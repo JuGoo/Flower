@@ -21,7 +21,7 @@ class SignupViewController: UIViewController {
     weak var delegate: SignupViewControllerDelegate?
     let viewModel: SignupViewModelType
     
-    init(viewModel:SignupViewModelType) {
+    init(viewModel: SignupViewModelType) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -33,12 +33,10 @@ class SignupViewController: UIViewController {
     deinit {
         print("deallocing \(self)")
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = NSLocalizedString("create.account.title", comment: "")
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,7 +44,10 @@ class SignupViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func createAction(_ sender: Any) {
+        delegate?.didCompleteSignup()
+    }
+    
     /*
     // MARK: - Navigation
 
