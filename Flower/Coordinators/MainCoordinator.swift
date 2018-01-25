@@ -45,7 +45,7 @@ extension MainCoordinator: MainViewModelDelegate {
         self.delegate?.mainCoordinatorDelegateDidLogout(self)
     }
 
-    func mainViewDidClickCreateNewContest(_ mainViewModel: MainViewModel) {
+    func mainViewDidClickToPay(_ mainViewModel: MainViewModel) {
 //        let createContestNavigationController = UINavigationController()
 //        let createContestCoordinator = CreateContestCoordinator(navigationController: createContestNavigationController)
 //        createContestCoordinator.delegate = self
