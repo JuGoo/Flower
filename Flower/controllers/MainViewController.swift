@@ -58,6 +58,8 @@ extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let startersAndDrinks = viewModel.startersAndDrinks, let orderable = ((Array(startersAndDrinks)[indexPath.section].value?[indexPath.row])) {
             self.viewModel.addOneMore(orderable: orderable)
+            let cell = tableView.cellForRow(at: indexPath) as? OrderableTableViewCell
+            cell?.updateCountLabel(value: orderable.count)
         }
     }
 }

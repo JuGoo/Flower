@@ -37,9 +37,17 @@ class OrderableTableViewCell: UITableViewCell {
     
     func configure(_ orderable: Orderable) {
         self.widthMarkViewConstraint.constant = (orderable.count == 0) ? 0 : 5
-        self.counterLabel.text = "\(orderable.count)x"
+        self.updateCountLabel(value: orderable.count)
         self.nameLabel.text = orderable.name
         self.priceLabel.text = "\(orderable.price)€"
     }
     
+    func updateCountLabel(value: Int) {
+        self.counterLabel.isHidden = (value == 0)
+        self.counterLabel.text = "\(value)x"
+        self.counterLabel.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        UIView.animate(withDuration: 0.5) {
+            self.counterLabel.transform = CGAffineTransform(scaleX: 1.0, y: 1.0) //Scale label area
+        }
+    }
 }
