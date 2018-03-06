@@ -6,7 +6,7 @@
 //  Copyright © 2018 JG. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 protocol GetListOrderableServiceProtocol {
     func loadStartersAndDrinks() -> [Orderable]

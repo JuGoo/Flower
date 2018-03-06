@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094D1CB0A947407D35D865C2 /* Pods_Flower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531202A5557436BCAFCB686D /* Pods_Flower.framework */; };
+		1378428C34E28573A9A50DC1 /* Pods_FlowerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46060F4080A44DA302324B60 /* Pods_FlowerUITests.framework */; };
+		C7AA414FB42D7DD8C98DEF33 /* Pods_FlowerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE6D6412EB6FD9BBC9F8662 /* Pods_FlowerTests.framework */; };
 		F944A742201546CC00D4C771 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A731201546CC00D4C771 /* AuthenticationCoordinator.swift */; };
 		F944A743201546CC00D4C771 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A732201546CC00D4C771 /* AppCoordinator.swift */; };
 		F944A745201546CC00D4C771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F944A734201546CC00D4C771 /* Assets.xcassets */; };
@@ -15,28 +18,46 @@
 		F944A748201546CC00D4C771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A739201546CC00D4C771 /* AppDelegate.swift */; };
 		F944A74F201546E400D4C771 /* FlowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A73D201546CC00D4C771 /* FlowerTests.swift */; };
 		F944A752201546EF00D4C771 /* FlowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A741201546CC00D4C771 /* FlowerUITests.swift */; };
-		F944A7552015482F00D4C771 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944A7542015482F00D4C771 /* LoginViewController.swift */; };
 		F96EC8E42018E27E001013E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F96EC8E32018E27E001013E5 /* Localizable.strings */; };
-		F96EC8E92018E47C001013E5 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96EC8E72018E47C001013E5 /* PasswordViewController.swift */; };
-		F96EC8EA2018E47C001013E5 /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96EC8E82018E47C001013E5 /* PasswordViewController.xib */; };
-		F97A0D032017410700BA1664 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97A0D022017410700BA1664 /* LoginViewController.xib */; };
 		F9A2D2D02018F4BE00F0033E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2CF2018F4BE00F0033E /* Order.swift */; };
 		F9A2D2D32019DDC700F0033E /* GetListOrderableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2D22019DDC700F0033E /* GetListOrderableService.swift */; };
-		F9A2D2D82019DED000F0033E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2D72019DED000F0033E /* MainViewModel.swift */; };
 		F9A2D2E0201A1F6300F0033E /* OrderableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2DE201A1F6300F0033E /* OrderableTableViewCell.swift */; };
 		F9A2D2E1201A1F6300F0033E /* OrderableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D2DF201A1F6300F0033E /* OrderableTableViewCell.xib */; };
 		F9A2D2E3201A299B00F0033E /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2E2201A299B00F0033E /* Drink.swift */; };
 		F9A2D2E5201A29C800F0033E /* Snack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2E4201A29C800F0033E /* Snack.swift */; };
-		F9C368F52017A40600729638 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C368F42017A40600729638 /* MainViewController.swift */; };
-		F9C368F92017A63800729638 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9C368F82017A63800729638 /* MainViewController.xib */; };
-		F9C368FE2017AF3500729638 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C368FC2017AF3500729638 /* ProfileViewController.swift */; };
-		F9C368FF2017AF3500729638 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9C368FD2017AF3500729638 /* ProfileViewController.xib */; };
-		F9CDF6E120174C11009B506D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6DF20174C11009B506D /* SignupViewController.swift */; };
-		F9CDF6E220174C11009B506D /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CDF6E020174C11009B506D /* SignupViewController.xib */; };
+		F9A2D2E7201B716F00F0033E /* CellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2E6201B716F00F0033E /* CellIdentifiable.swift */; };
+		F9A2D2ED201B87B100F0033E /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2EA201B87B100F0033E /* OrderViewModel.swift */; };
+		F9A2D2EE201B87B100F0033E /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2EB201B87B100F0033E /* OrderViewController.swift */; };
+		F9A2D2EF201B87B100F0033E /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D2EC201B87B100F0033E /* OrderViewController.xib */; };
+		F9A2D2F9201B87F700F0033E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2F1201B87F700F0033E /* SignupViewController.swift */; };
+		F9A2D2FA201B87F700F0033E /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D2F2201B87F700F0033E /* ProfileViewController.xib */; };
+		F9A2D2FB201B87F700F0033E /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2F3201B87F700F0033E /* PasswordViewController.swift */; };
+		F9A2D2FC201B87F700F0033E /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D2F4201B87F700F0033E /* PasswordViewController.xib */; };
+		F9A2D2FD201B87F700F0033E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D2F5201B87F700F0033E /* LoginViewController.xib */; };
+		F9A2D2FE201B87F700F0033E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2F6201B87F700F0033E /* LoginViewController.swift */; };
+		F9A2D2FF201B87F700F0033E /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D2F7201B87F700F0033E /* SignupViewController.xib */; };
+		F9A2D300201B87F700F0033E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D2F8201B87F700F0033E /* ProfileViewController.swift */; };
+		F9A2D307201B892F00F0033E /* PayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D306201B892F00F0033E /* PayCoordinator.swift */; };
+		F9A2D30A201B8F6400F0033E /* ListCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D308201B8F6400F0033E /* ListCreditCardViewController.swift */; };
+		F9A2D30B201B8F6400F0033E /* ListCreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D309201B8F6400F0033E /* ListCreditCardViewController.xib */; };
+		F9A2D30D201B8FD500F0033E /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D30C201B8FD500F0033E /* CreditCard.swift */; };
+		F9A2D310201B920800F0033E /* ListCreditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D30F201B920800F0033E /* ListCreditCardViewModel.swift */; };
+		F9A2D312201BB34400F0033E /* GetListCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D311201BB34400F0033E /* GetListCardService.swift */; };
+		F9A2D315201CB1EB00F0033E /* AddCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D313201CB1EB00F0033E /* AddCardTableViewCell.swift */; };
+		F9A2D316201CB1EB00F0033E /* AddCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D314201CB1EB00F0033E /* AddCardTableViewCell.xib */; };
+		F9A2D319201CB80000F0033E /* ValidCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D317201CB80000F0033E /* ValidCardTableViewCell.swift */; };
+		F9A2D31A201CB80000F0033E /* ValidCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D318201CB80000F0033E /* ValidCardTableViewCell.xib */; };
+		F9A2D31E201CBBF100F0033E /* AddPaymentMethodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D31C201CBBF100F0033E /* AddPaymentMethodViewController.xib */; };
+		F9A2D320201CC04F00F0033E /* AddPaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D31F201CC04F00F0033E /* AddPaymentMethodViewController.swift */; };
+		F9A2D322201F57E900F0033E /* AddPaymentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D321201F57E900F0033E /* AddPaymentCoordinator.swift */; };
+		F9A2D3252020683800F0033E /* AddPaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D3242020683800F0033E /* AddPaymentViewModel.swift */; };
+		F9A2D32720207EC100F0033E /* PayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D32620207EC100F0033E /* PayService.swift */; };
+		F9A2D32B202084D800F0033E /* MyOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D329202084D800F0033E /* MyOrdersViewController.swift */; };
+		F9A2D32C202084D800F0033E /* MyOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2D32A202084D800F0033E /* MyOrdersViewController.xib */; };
+		F9A2D32E202087CA00F0033E /* MyOrdersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2D32D202087CA00F0033E /* MyOrdersCoordinator.swift */; };
 		F9CDF6E420178BB0009B506D /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6E320178BB0009B506D /* TabBarCoordinator.swift */; };
-		F9CDF6E620178C15009B506D /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6E520178C15009B506D /* OrderCoordinator.swift */; };
 		F9CDF6E820178C66009B506D /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6E720178C66009B506D /* ProfileCoordinator.swift */; };
-		F9CDF6EA20179D8F009B506D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6E920179D8F009B506D /* MainCoordinator.swift */; };
+		F9CDF6EA20179D8F009B506D /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CDF6E920179D8F009B506D /* OrderCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +78,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A5A2DDCFE1B79C918412232 /* Pods-Flower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flower.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flower/Pods-Flower.release.xcconfig"; sourceTree = "<group>"; };
+		46060F4080A44DA302324B60 /* Pods_FlowerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		531202A5557436BCAFCB686D /* Pods_Flower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8059314E94C59A5A237443 /* Pods-FlowerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerUITests/Pods-FlowerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		76FC0EBE6AE0A563056DF7DC /* Pods-Flower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flower/Pods-Flower.debug.xcconfig"; sourceTree = "<group>"; };
+		88E1EB04E58487D0FA34C171 /* Pods-FlowerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerUITests/Pods-FlowerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9FE6D6412EB6FD9BBC9F8662 /* Pods_FlowerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDE01E1568287AB14EC62A1 /* Pods-FlowerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerTests/Pods-FlowerTests.release.xcconfig"; sourceTree = "<group>"; };
+		C89A4B5E74825A8081D6ACE7 /* Pods-FlowerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerTests/Pods-FlowerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F90062EC200E64AB00578C11 /* Flower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9006302200E64AB00578C11 /* FlowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F900630D200E64AB00578C11 /* FlowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,28 +101,46 @@
 		F944A73E201546CC00D4C771 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F944A740201546CC00D4C771 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F944A741201546CC00D4C771 /* FlowerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowerUITests.swift; sourceTree = "<group>"; };
-		F944A7542015482F00D4C771 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F96EC8E32018E27E001013E5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		F96EC8E72018E47C001013E5 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
-		F96EC8E82018E47C001013E5 /* PasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
-		F97A0D022017410700BA1664 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		F9A2D2CF2018F4BE00F0033E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F9A2D2D22019DDC700F0033E /* GetListOrderableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListOrderableService.swift; sourceTree = "<group>"; };
-		F9A2D2D72019DED000F0033E /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F9A2D2DE201A1F6300F0033E /* OrderableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderableTableViewCell.swift; sourceTree = "<group>"; };
 		F9A2D2DF201A1F6300F0033E /* OrderableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderableTableViewCell.xib; sourceTree = "<group>"; };
 		F9A2D2E2201A299B00F0033E /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		F9A2D2E4201A29C800F0033E /* Snack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snack.swift; sourceTree = "<group>"; };
-		F9C368F42017A40600729638 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		F9C368F82017A63800729638 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		F9C368FC2017AF3500729638 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		F9C368FD2017AF3500729638 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
-		F9CDF6DF20174C11009B506D /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		F9CDF6E020174C11009B506D /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		F9A2D2E6201B716F00F0033E /* CellIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiable.swift; sourceTree = "<group>"; };
+		F9A2D2EA201B87B100F0033E /* OrderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		F9A2D2EB201B87B100F0033E /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		F9A2D2EC201B87B100F0033E /* OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
+		F9A2D2F1201B87F700F0033E /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		F9A2D2F2201B87F700F0033E /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		F9A2D2F3201B87F700F0033E /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		F9A2D2F4201B87F700F0033E /* PasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
+		F9A2D2F5201B87F700F0033E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F9A2D2F6201B87F700F0033E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F9A2D2F7201B87F700F0033E /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		F9A2D2F8201B87F700F0033E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F9A2D306201B892F00F0033E /* PayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCoordinator.swift; sourceTree = "<group>"; };
+		F9A2D308201B8F6400F0033E /* ListCreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCreditCardViewController.swift; sourceTree = "<group>"; };
+		F9A2D309201B8F6400F0033E /* ListCreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCreditCardViewController.xib; sourceTree = "<group>"; };
+		F9A2D30C201B8FD500F0033E /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		F9A2D30F201B920800F0033E /* ListCreditCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCreditCardViewModel.swift; sourceTree = "<group>"; };
+		F9A2D311201BB34400F0033E /* GetListCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListCardService.swift; sourceTree = "<group>"; };
+		F9A2D313201CB1EB00F0033E /* AddCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardTableViewCell.swift; sourceTree = "<group>"; };
+		F9A2D314201CB1EB00F0033E /* AddCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCardTableViewCell.xib; sourceTree = "<group>"; };
+		F9A2D317201CB80000F0033E /* ValidCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidCardTableViewCell.swift; sourceTree = "<group>"; };
+		F9A2D318201CB80000F0033E /* ValidCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValidCardTableViewCell.xib; sourceTree = "<group>"; };
+		F9A2D31C201CBBF100F0033E /* AddPaymentMethodViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPaymentMethodViewController.xib; sourceTree = "<group>"; };
+		F9A2D31F201CC04F00F0033E /* AddPaymentMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodViewController.swift; sourceTree = "<group>"; };
+		F9A2D321201F57E900F0033E /* AddPaymentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentCoordinator.swift; sourceTree = "<group>"; };
+		F9A2D3242020683800F0033E /* AddPaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentViewModel.swift; sourceTree = "<group>"; };
+		F9A2D32620207EC100F0033E /* PayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
+		F9A2D329202084D800F0033E /* MyOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersViewController.swift; sourceTree = "<group>"; };
+		F9A2D32A202084D800F0033E /* MyOrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrdersViewController.xib; sourceTree = "<group>"; };
+		F9A2D32D202087CA00F0033E /* MyOrdersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersCoordinator.swift; sourceTree = "<group>"; };
 		F9CDF6E320178BB0009B506D /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
-		F9CDF6E520178C15009B506D /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
 		F9CDF6E720178C66009B506D /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
-		F9CDF6E920179D8F009B506D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		F9CDF6E920179D8F009B506D /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094D1CB0A947407D35D865C2 /* Pods_Flower.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AA414FB42D7DD8C98DEF33 /* Pods_FlowerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +164,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1378428C34E28573A9A50DC1 /* Pods_FlowerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		298D3FAEB17991F43EEB7895 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				531202A5557436BCAFCB686D /* Pods_Flower.framework */,
+				9FE6D6412EB6FD9BBC9F8662 /* Pods_FlowerTests.framework */,
+				46060F4080A44DA302324B60 /* Pods_FlowerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D343B7C4E5969DC30831DB1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76FC0EBE6AE0A563056DF7DC /* Pods-Flower.debug.xcconfig */,
+				3A5A2DDCFE1B79C918412232 /* Pods-Flower.release.xcconfig */,
+				C89A4B5E74825A8081D6ACE7 /* Pods-FlowerTests.debug.xcconfig */,
+				ACDE01E1568287AB14EC62A1 /* Pods-FlowerTests.release.xcconfig */,
+				5A8059314E94C59A5A237443 /* Pods-FlowerUITests.debug.xcconfig */,
+				88E1EB04E58487D0FA34C171 /* Pods-FlowerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F90062E3200E64AB00578C11 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +201,8 @@
 				F944A73C201546CC00D4C771 /* FlowerTests */,
 				F944A73F201546CC00D4C771 /* FlowerUITests */,
 				F90062ED200E64AB00578C11 /* Products */,
+				D343B7C4E5969DC30831DB1E /* Pods */,
+				298D3FAEB17991F43EEB7895 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +223,6 @@
 				F9A2D2D12019DDA200F0033E /* services */,
 				F9A2D2CE2018F49B00F0033E /* models */,
 				F9C368F32017A3F400729638 /* controllers */,
-				F944A7532015480B00D4C771 /* Authentification */,
 				F944A730201546CC00D4C771 /* Coordinators */,
 				F944A734201546CC00D4C771 /* Assets.xcassets */,
 				F944A735201546CC00D4C771 /* LaunchScreen.storyboard */,
@@ -163,11 +238,13 @@
 			isa = PBXGroup;
 			children = (
 				F944A732201546CC00D4C771 /* AppCoordinator.swift */,
-				F9CDF6E920179D8F009B506D /* MainCoordinator.swift */,
+				F9CDF6E920179D8F009B506D /* OrderCoordinator.swift */,
 				F944A731201546CC00D4C771 /* AuthenticationCoordinator.swift */,
 				F9CDF6E320178BB0009B506D /* TabBarCoordinator.swift */,
-				F9CDF6E520178C15009B506D /* OrderCoordinator.swift */,
 				F9CDF6E720178C66009B506D /* ProfileCoordinator.swift */,
+				F9A2D306201B892F00F0033E /* PayCoordinator.swift */,
+				F9A2D321201F57E900F0033E /* AddPaymentCoordinator.swift */,
+				F9A2D32D202087CA00F0033E /* MyOrdersCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -190,27 +267,13 @@
 			path = FlowerUITests;
 			sourceTree = "<group>";
 		};
-		F944A7532015480B00D4C771 /* Authentification */ = {
-			isa = PBXGroup;
-			children = (
-				F944A7542015482F00D4C771 /* LoginViewController.swift */,
-				F97A0D022017410700BA1664 /* LoginViewController.xib */,
-				F9CDF6DF20174C11009B506D /* SignupViewController.swift */,
-				F9CDF6E020174C11009B506D /* SignupViewController.xib */,
-				F96EC8E72018E47C001013E5 /* PasswordViewController.swift */,
-				F96EC8E82018E47C001013E5 /* PasswordViewController.xib */,
-				F9C368FC2017AF3500729638 /* ProfileViewController.swift */,
-				F9C368FD2017AF3500729638 /* ProfileViewController.xib */,
-			);
-			path = Authentification;
-			sourceTree = "<group>";
-		};
 		F9A2D2CE2018F49B00F0033E /* models */ = {
 			isa = PBXGroup;
 			children = (
 				F9A2D2CF2018F4BE00F0033E /* Order.swift */,
 				F9A2D2E2201A299B00F0033E /* Drink.swift */,
 				F9A2D2E4201A29C800F0033E /* Snack.swift */,
+				F9A2D30C201B8FD500F0033E /* CreditCard.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -219,16 +282,10 @@
 			isa = PBXGroup;
 			children = (
 				F9A2D2D22019DDC700F0033E /* GetListOrderableService.swift */,
+				F9A2D311201BB34400F0033E /* GetListCardService.swift */,
+				F9A2D32620207EC100F0033E /* PayService.swift */,
 			);
 			path = services;
-			sourceTree = "<group>";
-		};
-		F9A2D2D62019DED000F0033E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				F9A2D2D72019DED000F0033E /* MainViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F9A2D2D9201A1C7500F0033E /* views */ = {
@@ -236,16 +293,85 @@
 			children = (
 				F9A2D2DE201A1F6300F0033E /* OrderableTableViewCell.swift */,
 				F9A2D2DF201A1F6300F0033E /* OrderableTableViewCell.xib */,
+				F9A2D2E6201B716F00F0033E /* CellIdentifiable.swift */,
+				F9A2D313201CB1EB00F0033E /* AddCardTableViewCell.swift */,
+				F9A2D314201CB1EB00F0033E /* AddCardTableViewCell.xib */,
+				F9A2D317201CB80000F0033E /* ValidCardTableViewCell.swift */,
+				F9A2D318201CB80000F0033E /* ValidCardTableViewCell.xib */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		F9A2D2E8201B87B100F0033E /* OrderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2D2E9201B87B100F0033E /* ViewModel */,
+				F9A2D2EB201B87B100F0033E /* OrderViewController.swift */,
+				F9A2D2EC201B87B100F0033E /* OrderViewController.xib */,
+			);
+			path = OrderViewController;
+			sourceTree = "<group>";
+		};
+		F9A2D2E9201B87B100F0033E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2D2EA201B87B100F0033E /* OrderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9A2D2F0201B87F700F0033E /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2D2F1201B87F700F0033E /* SignupViewController.swift */,
+				F9A2D2F2201B87F700F0033E /* ProfileViewController.xib */,
+				F9A2D2F3201B87F700F0033E /* PasswordViewController.swift */,
+				F9A2D2F4201B87F700F0033E /* PasswordViewController.xib */,
+				F9A2D2F5201B87F700F0033E /* LoginViewController.xib */,
+				F9A2D2F6201B87F700F0033E /* LoginViewController.swift */,
+				F9A2D2F7201B87F700F0033E /* SignupViewController.xib */,
+				F9A2D2F8201B87F700F0033E /* ProfileViewController.swift */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
+		F9A2D303201B882F00F0033E /* PayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2D30E201B91FB00F0033E /* ViewModel */,
+				F9A2D308201B8F6400F0033E /* ListCreditCardViewController.swift */,
+				F9A2D309201B8F6400F0033E /* ListCreditCardViewController.xib */,
+				F9A2D31F201CC04F00F0033E /* AddPaymentMethodViewController.swift */,
+				F9A2D31C201CBBF100F0033E /* AddPaymentMethodViewController.xib */,
+			);
+			path = PayViewController;
+			sourceTree = "<group>";
+		};
+		F9A2D30E201B91FB00F0033E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2D30F201B920800F0033E /* ListCreditCardViewModel.swift */,
+				F9A2D3242020683800F0033E /* AddPaymentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9A2D328202084B400F0033E /* MyOrdersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2D329202084D800F0033E /* MyOrdersViewController.swift */,
+				F9A2D32A202084D800F0033E /* MyOrdersViewController.xib */,
+			);
+			path = MyOrdersViewController;
 			sourceTree = "<group>";
 		};
 		F9C368F32017A3F400729638 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F9A2D2D62019DED000F0033E /* ViewModel */,
-				F9C368F42017A40600729638 /* MainViewController.swift */,
-				F9C368F82017A63800729638 /* MainViewController.xib */,
+				F9A2D328202084B400F0033E /* MyOrdersViewController */,
+				F9A2D303201B882F00F0033E /* PayViewController */,
+				F9A2D2F0201B87F700F0033E /* Authentification */,
+				F9A2D2E8201B87B100F0033E /* OrderViewController */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -257,9 +383,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9006316200E64AB00578C11 /* Build configuration list for PBXNativeTarget "Flower" */;
 			buildPhases = (
+				E3A36194F8373FBA4584BBF3 /* [CP] Check Pods Manifest.lock */,
 				F90062E8200E64AB00578C11 /* Sources */,
 				F90062E9200E64AB00578C11 /* Frameworks */,
 				F90062EA200E64AB00578C11 /* Resources */,
+				972B0DE07B00B6FDD4E34068 /* [CP] Embed Pods Frameworks */,
+				0EB36FD3E24557CB68E981E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,9 +403,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9006319200E64AB00578C11 /* Build configuration list for PBXNativeTarget "FlowerTests" */;
 			buildPhases = (
+				DA1FB0640F1AD5A9D6A49910 /* [CP] Check Pods Manifest.lock */,
 				F90062FE200E64AB00578C11 /* Sources */,
 				F90062FF200E64AB00578C11 /* Frameworks */,
 				F9006300200E64AB00578C11 /* Resources */,
+				3145BCCDB37B05E620BF83C8 /* [CP] Embed Pods Frameworks */,
+				AE0F373E98D7587FA1092668 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,9 +424,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F900631C200E64AB00578C11 /* Build configuration list for PBXNativeTarget "FlowerUITests" */;
 			buildPhases = (
+				94D1846BA2811454EEDEC7F4 /* [CP] Check Pods Manifest.lock */,
 				F9006309200E64AB00578C11 /* Sources */,
 				F900630A200E64AB00578C11 /* Frameworks */,
 				F900630B200E64AB00578C11 /* Resources */,
+				FD0E4147AF127A47A9F7BF30 /* [CP] Embed Pods Frameworks */,
+				52D4A5B1DD31A5CEBE9B2491 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,16 +492,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C368FF2017AF3500729638 /* ProfileViewController.xib in Resources */,
-				F97A0D032017410700BA1664 /* LoginViewController.xib in Resources */,
+				F9A2D31E201CBBF100F0033E /* AddPaymentMethodViewController.xib in Resources */,
+				F9A2D2FA201B87F700F0033E /* ProfileViewController.xib in Resources */,
+				F9A2D32C202084D800F0033E /* MyOrdersViewController.xib in Resources */,
 				F9A2D2E1201A1F6300F0033E /* OrderableTableViewCell.xib in Resources */,
-				F9C368F92017A63800729638 /* MainViewController.xib in Resources */,
-				F9CDF6E220174C11009B506D /* SignupViewController.xib in Resources */,
+				F9A2D2EF201B87B100F0033E /* OrderViewController.xib in Resources */,
 				F944A747201546CC00D4C771 /* Main.storyboard in Resources */,
 				F96EC8E42018E27E001013E5 /* Localizable.strings in Resources */,
+				F9A2D30B201B8F6400F0033E /* ListCreditCardViewController.xib in Resources */,
+				F9A2D2FC201B87F700F0033E /* PasswordViewController.xib in Resources */,
+				F9A2D316201CB1EB00F0033E /* AddCardTableViewCell.xib in Resources */,
+				F9A2D2FF201B87F700F0033E /* SignupViewController.xib in Resources */,
 				F944A745201546CC00D4C771 /* Assets.xcassets in Resources */,
-				F96EC8EA2018E47C001013E5 /* PasswordViewController.xib in Resources */,
+				F9A2D31A201CB80000F0033E /* ValidCardTableViewCell.xib in Resources */,
 				F944A746201546CC00D4C771 /* LaunchScreen.storyboard in Resources */,
+				F9A2D2FD201B87F700F0033E /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,29 +526,194 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EB36FD3E24557CB68E981E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flower/Pods-Flower-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3145BCCDB37B05E620BF83C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlowerTests/Pods-FlowerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52D4A5B1DD31A5CEBE9B2491 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlowerUITests/Pods-FlowerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94D1846BA2811454EEDEC7F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		972B0DE07B00B6FDD4E34068 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flower/Pods-Flower-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CreditCardRow/CreditCardRow.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CreditCardRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flower/Pods-Flower-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE0F373E98D7587FA1092668 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlowerTests/Pods-FlowerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA1FB0640F1AD5A9D6A49910 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3A36194F8373FBA4584BBF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flower-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD0E4147AF127A47A9F7BF30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlowerUITests/Pods-FlowerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F90062E8200E64AB00578C11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F944A7552015482F00D4C771 /* LoginViewController.swift in Sources */,
-				F9CDF6E120174C11009B506D /* SignupViewController.swift in Sources */,
 				F9CDF6E420178BB0009B506D /* TabBarCoordinator.swift in Sources */,
 				F944A748201546CC00D4C771 /* AppDelegate.swift in Sources */,
 				F944A743201546CC00D4C771 /* AppCoordinator.swift in Sources */,
-				F9A2D2D82019DED000F0033E /* MainViewModel.swift in Sources */,
 				F9A2D2E5201A29C800F0033E /* Snack.swift in Sources */,
 				F9A2D2D32019DDC700F0033E /* GetListOrderableService.swift in Sources */,
-				F96EC8E92018E47C001013E5 /* PasswordViewController.swift in Sources */,
-				F9CDF6E620178C15009B506D /* OrderCoordinator.swift in Sources */,
-				F9C368FE2017AF3500729638 /* ProfileViewController.swift in Sources */,
+				F9A2D2ED201B87B100F0033E /* OrderViewModel.swift in Sources */,
+				F9A2D300201B87F700F0033E /* ProfileViewController.swift in Sources */,
+				F9A2D3252020683800F0033E /* AddPaymentViewModel.swift in Sources */,
+				F9A2D2E7201B716F00F0033E /* CellIdentifiable.swift in Sources */,
+				F9A2D312201BB34400F0033E /* GetListCardService.swift in Sources */,
+				F9A2D2EE201B87B100F0033E /* OrderViewController.swift in Sources */,
+				F9A2D30D201B8FD500F0033E /* CreditCard.swift in Sources */,
+				F9A2D319201CB80000F0033E /* ValidCardTableViewCell.swift in Sources */,
+				F9A2D32720207EC100F0033E /* PayService.swift in Sources */,
+				F9A2D307201B892F00F0033E /* PayCoordinator.swift in Sources */,
+				F9A2D322201F57E900F0033E /* AddPaymentCoordinator.swift in Sources */,
+				F9A2D30A201B8F6400F0033E /* ListCreditCardViewController.swift in Sources */,
 				F9A2D2E0201A1F6300F0033E /* OrderableTableViewCell.swift in Sources */,
+				F9A2D2FB201B87F700F0033E /* PasswordViewController.swift in Sources */,
 				F9CDF6E820178C66009B506D /* ProfileCoordinator.swift in Sources */,
-				F9CDF6EA20179D8F009B506D /* MainCoordinator.swift in Sources */,
+				F9A2D32E202087CA00F0033E /* MyOrdersCoordinator.swift in Sources */,
+				F9A2D310201B920800F0033E /* ListCreditCardViewModel.swift in Sources */,
+				F9CDF6EA20179D8F009B506D /* OrderCoordinator.swift in Sources */,
 				F9A2D2D02018F4BE00F0033E /* Order.swift in Sources */,
+				F9A2D315201CB1EB00F0033E /* AddCardTableViewCell.swift in Sources */,
+				F9A2D2FE201B87F700F0033E /* LoginViewController.swift in Sources */,
+				F9A2D32B202084D800F0033E /* MyOrdersViewController.swift in Sources */,
+				F9A2D2F9201B87F700F0033E /* SignupViewController.swift in Sources */,
 				F9A2D2E3201A299B00F0033E /* Drink.swift in Sources */,
+				F9A2D320201CC04F00F0033E /* AddPaymentMethodViewController.swift in Sources */,
 				F944A742201546CC00D4C771 /* AuthenticationCoordinator.swift in Sources */,
-				F9C368F52017A40600729638 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +879,7 @@
 		};
 		F9006317200E64AB00578C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76FC0EBE6AE0A563056DF7DC /* Pods-Flower.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +896,7 @@
 		};
 		F9006318200E64AB00578C11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5A2DDCFE1B79C918412232 /* Pods-Flower.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -606,6 +913,7 @@
 		};
 		F900631A200E64AB00578C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89A4B5E74825A8081D6ACE7 /* Pods-FlowerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -622,6 +930,7 @@
 		};
 		F900631B200E64AB00578C11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACDE01E1568287AB14EC62A1 /* Pods-FlowerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -638,6 +947,7 @@
 		};
 		F900631D200E64AB00578C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A8059314E94C59A5A237443 /* Pods-FlowerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -653,6 +963,7 @@
 		};
 		F900631E200E64AB00578C11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88E1EB04E58487D0FA34C171 /* Pods-FlowerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

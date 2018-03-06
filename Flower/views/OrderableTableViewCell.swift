@@ -16,32 +16,25 @@ class OrderableTableViewCell: UITableViewCell {
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+
+    var item: Orderable? {
+        didSet {
+            guard let item = item else {
+                return
+            }
+            
+            self.nameLabel?.text = item.name
+            self.priceLabel?.text = "\(item.price)€"
+            self.updateCountLabel(value: item.count)
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         self.selectionStyle = .none
     }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
-        
-        if selected {
-            UIView.animate(withDuration: 0.5) {
-                self.widthMarkViewConstraint.constant = 5
-                self.contentView.layoutIfNeeded()
-            }
-        }
-    }
-    
-    func configure(_ orderable: Orderable) {
-        self.widthMarkViewConstraint.constant = (orderable.count == 0) ? 0 : 5
-        self.updateCountLabel(value: orderable.count)
-        self.nameLabel.text = orderable.name
-        self.priceLabel.text = "\(orderable.price)€"
-    }
-    
+
     func updateCountLabel(value: Int) {
         self.counterLabel.isHidden = (value == 0)
         self.counterLabel.text = "\(value)x"
@@ -51,3 +44,5 @@ class OrderableTableViewCell: UITableViewCell {
         }
     }
 }
+
+extension OrderableTableViewCell: CellIdentifiable {}

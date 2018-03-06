@@ -41,6 +41,7 @@ class AppCoordinator: NSObject, TabBarCoordinator {
     var childCoordinators = [Coordinator]()
     
     let orderTabNavigationController = UINavigationController()
+    let myOrdersTabNavigationController = UINavigationController()
     let profileTabNavigationController = UINavigationController()
     
     required init(tabBarController: UITabBarController?) {
@@ -56,11 +57,11 @@ class AppCoordinator: NSObject, TabBarCoordinator {
         initTabBarController()
     }
     
-    fileprivate func initAndStartMainCoordinator(navigationController: UINavigationController) {
-        let mainCoordinator = MainCoordinator(navigationController: navigationController)
-        mainCoordinator.delegate = self
-        mainCoordinator.start()
-        self.addChildCoordinator(mainCoordinator)
+    fileprivate func initAndStartOrderCoordinator(navigationController: UINavigationController) {
+        let orderCoordinator = OrderCoordinator(navigationController: navigationController)
+        orderCoordinator.delegate = self
+        orderCoordinator.start()
+        self.addChildCoordinator(orderCoordinator)
     }
     
     fileprivate func initAndStartAuthenticationCoordinator(navigationController: UINavigationController) {
@@ -68,6 +69,13 @@ class AppCoordinator: NSObject, TabBarCoordinator {
         authenticationCoordinator.delegate = self
         authenticationCoordinator.start()
         self.addChildCoordinator(authenticationCoordinator)
+    }
+    
+    fileprivate func initAndStartMyOrdersCoordinator(navigationController: UINavigationController) {
+        let myOrdersCoordinator = MyOrdersCoordinator(navigationController: navigationController)
+        myOrdersCoordinator.delegate = self
+        myOrdersCoordinator.start()
+        self.addChildCoordinator(myOrdersCoordinator)
     }
     
     fileprivate func initAndStartProfileCoordinator(navigationController: UINavigationController) {
@@ -82,18 +90,29 @@ class AppCoordinator: NSObject, TabBarCoordinator {
         let orderTabBarItem = UITabBarItem(title: "Order", image: UIImage(named: "first"), tag: 0)
         orderTabNavigationController.tabBarItem = orderTabBarItem
         
-        let profileTabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "second"), tag: 1)
+        initAndStartOrderCoordinator(navigationController: orderTabNavigationController)
+        
+        let myOrdersTabBarItem = UITabBarItem(title: "My orders", image: UIImage(named: "first"), tag: 1)
+        myOrdersTabNavigationController.tabBarItem = myOrdersTabBarItem
+        
+        initAndStartMyOrdersCoordinator(navigationController: myOrdersTabNavigationController)
+        
+        let profileTabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "second"), tag: 2)
         profileTabNavigationController.tabBarItem = profileTabBarItem
         
-        initAndStartMainCoordinator(navigationController: orderTabNavigationController)
+//        initAndStartOrderCoordinator(navigationController: profileTabNavigationController)
         
-        tabBarController?.viewControllers = [orderTabNavigationController, profileTabNavigationController]
+        tabBarController?.viewControllers = [orderTabNavigationController, myOrdersTabNavigationController, profileTabNavigationController]
     }
 }
 
 extension AppCoordinator: UITabBarControllerDelegate {
     fileprivate func showLoginViewController() {
         initAndStartAuthenticationCoordinator(navigationController: profileTabNavigationController)
+    }
+    
+    fileprivate func showMyOrdersViewController() {
+        initAndStartMyOrdersCoordinator(navigationController: myOrdersTabNavigationController)
     }
     
     fileprivate func showProfileViewController() {
@@ -106,8 +125,12 @@ extension AppCoordinator: UITabBarControllerDelegate {
                 //orders
             case controllers[0]:
                 break
-                //profile - login
+            //my orders
             case controllers[1]:
+                showMyOrdersViewController()
+                break
+                //profile - login
+            case controllers[2]:
                 // user is not logged in and Profile tab is selected
                 if !isLoggedIn {
                     showLoginViewController()
@@ -123,8 +146,8 @@ extension AppCoordinator: UITabBarControllerDelegate {
     }
 }
 
-extension AppCoordinator: MainCoordinatorDelegate {
-    func mainCoordinatorDelegateDidLogout(_ mainCoordinator: MainCoordinator) {
+extension AppCoordinator: OrderCoordinatorDelegate {
+    func orderCoordinatorDelegateDidLogout(_ orderCoordinator: OrderCoordinator) {
         
         //        UserManager.shared.clearToken()
         let storage = HTTPCookieStorage.shared
@@ -133,10 +156,13 @@ extension AppCoordinator: MainCoordinatorDelegate {
         }
         
         profileTabNavigationController.viewControllers = []
-        self.removeChildCoordinator(mainCoordinator)
+        self.removeChildCoordinator(orderCoordinator)
         
         tabBarController?.selectedIndex = 0
     }
+}
+
+extension AppCoordinator: MyOrdersCoordinatorDelegate {
 }
 
 extension AppCoordinator: AuthenticationCoordinatorDelegate {
